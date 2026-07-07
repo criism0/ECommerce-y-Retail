@@ -1,0 +1,12 @@
+# Datasets pesados (no se suben al repo, ver README)
+2019-Nov.csv
+events.csv
+item_properties_part1.csv
+item_properties_part2.csv
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
