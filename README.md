@@ -19,13 +19,13 @@ Se utilizan dos datasets públicos de Kaggle:
 
 **Incluidos en el repo** (livianos):
 
-- `category_tree.csv` — jerarquía de categorías de RetailRocket (14 KB).
+- `category_tree.csv` - jerarquía de categorías de RetailRocket (14 KB).
 
-**No incluidos en el repo** (muy pesados):
+**No incluidos en el repo** (ya que son muy pesados):
 
-- `2019-Nov.csv` (~9 GB) — dataset principal de `ECommerce.ipynb`.
-- `events.csv` (~94 MB) — log de eventos de RetailRocket.
-- `item_properties_part1.csv` (~484 MB) y `item_properties_part2.csv` (~409 MB) — metadatos de productos de RetailRocket.
+- `2019-Nov.csv` (~9 GB) - dataset principal de `ECommerce.ipynb`.
+- `events.csv` (~94 MB) - log de eventos de RetailRocket.
+- `item_properties_part1.csv` (~484 MB) y `item_properties_part2.csv` (~409 MB) - metadatos de productos de RetailRocket.
 
 Para reproducir los notebooks, descarga estos cuatro archivos desde los links de arriba y ubícalos en la raíz del proyecto con los mismos nombres.
 
@@ -173,6 +173,6 @@ Incluye:
 >
 > Este proyecto se desarrolló con asistencia de Inteligencia Artificial:
 >
-> - **Modelo:** Claude (familia Claude 4.x — Opus / Sonnet)
-> - **Plataforma:** Claude Code
+> - **Modelo:** Claude (familia Claude 4.x - Opus / Sonnet) y Codex 5.3
+> - **Plataforma:** Claude Code / Codex
 > - **Cómo se usó:** Se empleó IA generativa como apoyo en distintas etapas del desarrollo. En la parte de código, se usó para escribir, refactorizar y estructurar los módulos de `ECommerce_Helper.py`, `ECommerce_Experiments.py`, `ECommerce_Models.py`, `ECommerce_TALE.py` y `ECommerce_Exports.py`, buscando funciones reutilizables y consistentes entre los dos pipelines (`ECommerce.ipynb` y `RetailRocket.ipynb`), tanto en la arquitectura de los modelos secuenciales (`GRU4Rec`, `SASRec`, integración de `TALE`) como en los helpers de carga, muestreo, split temporal y evaluación. También se usó como apoyo en la fase exploratoria de datos, agilizando la búsqueda e identificación del dataset RetailRocket, permitiendo contrastarlo con el dataset eCommerce original y establecer un esquema de validación cruzada entre ambos que sirvió para corroborar y robustecer los hallazgos observados inicialmente. Adicionalmente se usó para revisión de código (detección de bugs y sugerencias) y para redactar este README. Todo el contenido generado fue revisado, ajustado y validado por el equipo antes de su uso; las decisiones de diseño, metodología y análisis fueron del equipo, con la IA como herramienta de apoyo.
