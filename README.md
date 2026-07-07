@@ -17,7 +17,17 @@ Se utilizan dos datasets públicos de Kaggle:
 - **RetailRocket eCommerce Dataset** (usado en `RetailRocket.ipynb`): eventos de navegación y compra junto con propiedades de ítems y jerarquía de categorías.
   https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
 
-Los archivos `2019-Nov.csv`, `events.csv`, `item_properties_part1.csv` e `item_properties_part2.csv` **no se incluyen en este repo** porque son muy pesados (el más grande, `2019-Nov.csv`, ronda los 9 GB). Para reproducir los notebooks, descarga los datasets desde los links de arriba y ubica los archivos en la raíz del proyecto con los mismos nombres.
+**Incluidos en el repo** (livianos):
+
+- `category_tree.csv` — jerarquía de categorías de RetailRocket (14 KB).
+
+**No incluidos en el repo** (muy pesados):
+
+- `2019-Nov.csv` (~9 GB) — dataset principal de `ECommerce.ipynb`.
+- `events.csv` (~94 MB) — log de eventos de RetailRocket.
+- `item_properties_part1.csv` (~484 MB) y `item_properties_part2.csv` (~409 MB) — metadatos de productos de RetailRocket.
+
+Para reproducir los notebooks, descarga estos cuatro archivos desde los links de arriba y ubícalos en la raíz del proyecto con los mismos nombres.
 
 ## Estructura del repo
 
@@ -31,7 +41,7 @@ Los archivos `2019-Nov.csv`, `events.csv`, `item_properties_part1.csv` e `item_p
   Metadatos de productos de RetailRocket en formato key-value. **No incluidos en el repo** (ver sección Datasets).
 
 - `category_tree.csv`
-  Jerarquía de categorías de RetailRocket.
+  Jerarquía de categorías de RetailRocket. **Incluido en el repo.**
 
 - `ECommerce.ipynb`
   Notebook principal del proyecto original.
